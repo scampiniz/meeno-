@@ -31,7 +31,7 @@
 <body class="gradient-background">
   <div class="flex items-center justify-center h-screen">
     <div class="flex flex-col items-center p-4">
-      <img id="imageDisplay" src="https://github.com/scampiniz/meeno-/blob/df687ccd0b489ad1e9ef4c0f485132863c3e9194/pics/IMG1.gif" class="rounded-md w-80 h-80 object-cover" style="object-fit: cover;" />
+      <img id="imageDisplay" src="./pics/IMG1.gif" class="rounded-md w-80 h-80 object-cover" style="object-fit: cover;" />
       <h2 id="valentineQuestion" class="text-4xl font-bold italic text-[#bd1e59] my-4">Will you be my Valentine?</h2>
       <div class="flex gap-4 pt-[20px] items-center" id="responseButtons">
         <button id="yesButton"
@@ -62,13 +62,13 @@
 
     // Image paths
     const imagePaths = [
-      "https://github.com/scampiniz/meeno-/blob/df687ccd0b489ad1e9ef4c0f485132863c3e9194/pics/IMG1.gif", // Image 1
-      "pics/IMG2.gif", // Image 2
-      "pics/IMG3.gif", // Image 3
-      "pics/IMG4.gif", // Image 4
-      "pics/IMG5.gif", // Image 5
-      "pics/IMG6.gif", // Image 6
-      "pics/IMG7.gif"  // Image 7 (Final image for "Yes" response)
+      "./pics/IMG1.gif", // Image 1
+      "./pics/IMG2.gif", // Image 2
+      "./pics/IMG3.gif", // Image 3
+      "./pics/IMG4.gif", // Image 4
+      "./pics/IMG5.gif", // Image 5
+      "./pics/IMG6.gif", // Image 6
+      "./pics/IMG7.gif"  // Image 7 (Final image for "Yes" response)
     ];
 
     // No button functionality
@@ -101,7 +101,7 @@
 
     // Yes button functionality
     yesButton.addEventListener('click', () => {
-      imageDisplay.src = 'pics/IMG7.gif'; // Final image for "Yes"
+      imageDisplay.src = './pics/IMG7.gif'; // Final image for "Yes"
       valentineQuestion.textContent = "No Takebacks"; // Change the question text
       responseButtons.style.display = 'none'; // Hide both buttons
       confetti(); // Trigger confetti animation
