@@ -31,7 +31,7 @@
 <body class="gradient-background">
   <div class="flex items-center justify-center h-screen">
     <div class="flex flex-col items-center p-4">
-      <img id="imageDisplay" src="https://www.dropbox.com/scl/fi/1gp32aabdrr25a9148np8/47B8B5D8-197E-4A41-99DD-21E3D4A85C44.gif?raw=1" alt="Cute kitten with flowers"      class="rounded-md w-80 h-80 object-cover" style="object-fit: cover;" />
+      <img id="imageDisplay" src="pics/IMG1.gif" alt="Cute kitten with flowers"      class="rounded-md w-80 h-80 object-cover" style="object-fit: cover;" />
       <h2 id="valentineQuestion" class="text-4xl font-bold italic text-[#bd1e59] my-4">Will you be my Valentine?</h2>
       <div class="flex gap-4 pt-[20px] items-center" id="responseButtons">
         <button id="yesButton"
@@ -62,14 +62,13 @@
 
     // Image paths
     const imagePaths = [
-      "https://www.dropbox.com/scl/fi/1gp32aabdrr25a9148np8/47B8B5D8-197E-4A41-99DD-21E3D4A85C44.gif?raw=1", // Image 1
-      "<img id="imageDisplay" src="https://www.dropbox.com/scl/fi/k5g9qb5a9a6jmfkiiwkiq/IMG_2697.jpg?raw=1" alt="Image description" class="rounded-md w-80 h-80 object-cover" style="object-fit: cover;" />
-", // Image 2
-      "https://www.dropbox.com/scl/fi/atk512qbqexruk2i7ivvv/lp_image-1.jpg?rlkey=94tum76gn6p71rd8cms4dmzap&st=oogqkudl&dl=0", // Image 3
-      "https://www.dropbox.com/scl/fi/qoehid7fk36w8wvtwusu1/lp_image-2.gif?rlkey=hcppq6651ko3kfkw3nzjk3iem&st=a63j4dtk&dl=0", // Image 4
-      "https://www.dropbox.com/scl/fi/plzwm5029x6f0pypbt4ik/IMG_1386.gif?rlkey=hkabs1jaavnktyocylegvxejz&st=fjy4m4kb&dl=0", // Image 5
-      "https://www.dropbox.com/scl/fi/gr3y3tz7xlako9wvx87r1/IMG_0744.JPG?rlkey=lxgc6bjbkexr75i29n121r6qk&st=a9td5gxq&dl=0", // Image 6
-      "https://www.dropbox.com/scl/fi/gr3y3tz7xlako9wvx87r1/IMG_0744.JPG?rlkey=lxgc6bjbkexr75i29n121r6qk&st=a9td5gxq&dl=0"  // Image 7 (Final image for "Yes" response)
+      "pics/IMG1.gif", // Image 1
+      "pics/IMG2.gif", // Image 2
+      "pics/IMG3.gif", // Image 3
+      "pics/IMG4.gif", // Image 4
+      "pics/IMG5.gif", // Image 5
+      "pics/IMG6.gif", // Image 6
+      "pics/IMG7.gif"  // Image 7 (Final image for "Yes" response)
     ];
 
     // No button functionality
@@ -102,7 +101,7 @@
 
     // Yes button functionality
     yesButton.addEventListener('click', () => {
-      imageDisplay.src = 'https://www.dropbox.com/scl/fi/33l2c0ft7gp3lq2ipbxkb/lp_image.jpg?rlkey=ms0n7t4irdi411gzuu0veglin&st=pl5nidgl&dl=0'; // Final image for "Yes"
+      imageDisplay.src = 'pics/IMG7.gif'; // Final image for "Yes"
       valentineQuestion.textContent = "No Takebacks"; // Change the question text
       responseButtons.style.display = 'none'; // Hide both buttons
       confetti(); // Trigger confetti animation
